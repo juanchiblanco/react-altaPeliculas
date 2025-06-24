@@ -1,12 +1,14 @@
+import CardPelicula from "./CardPelicula";
 
 const ListaPeliculas = () => {
     return (
-        <article className="w-75 border border-light-subtle">
-            <div className="row justify-content-center">
-                <p className="col-12 col-md-6 col-lg-3">1</p>
-                <p className="col-12 col-md-6 col-lg-3">1</p>
-                <p className="col-12 col-md-6 col-lg-3">1</p>
-                <p className="col-12 col-md-6 col-lg-3">1</p>
+        <article className="w-75 border border-light-subtle rounded">
+            <div className="row justify-content-center gap-2">
+                <CardPelicula/>
+                <CardPelicula/>
+                <CardPelicula/>
+                <CardPelicula/>
+                <CardPelicula/>
             </div>
         </article>
     );
