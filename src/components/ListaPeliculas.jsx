@@ -1,14 +1,12 @@
 import CardPelicula from "./CardPelicula";
 
-const ListaPeliculas = () => {
+const ListaPeliculas = ({peliculas, borrarColor}) => {
     return (
         <article className="w-75 border border-light-subtle rounded">
             <div className="row justify-content-center gap-2">
-                <CardPelicula/>
-                <CardPelicula/>
-                <CardPelicula/>
-                <CardPelicula/>
-                <CardPelicula/>
+                {
+                    peliculas.map((pelicula, indice)=> <CardPelicula pelicula={pelicula} key={indice} borrarColor={borrarColor}></CardPelicula>)
+                }
             </div>
         </article>
     );
